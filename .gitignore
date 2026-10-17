@@ -1,2 +1,5 @@
 .env
 docs/
+.venv/
+*.egg-info/
+scratch.json

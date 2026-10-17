@@ -1,5 +1,13 @@
+# Environment
 .env
-docs/
 .venv/
+
+# Python build/cache
 *.egg-info/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+
+# Scratch
 scratch.json

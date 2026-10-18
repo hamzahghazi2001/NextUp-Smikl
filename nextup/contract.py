@@ -9,10 +9,6 @@ ADDON_TYPES = ["series"]
 
 CATALOG_ID = "nextup"
 CATALOG_TYPE = "series"
-CATALOG_NAME = "Next Up"  
+CATALOG_NAME = "Next Up"
 
-ADDON_CATALOG = {
-    "type": CATALOG_TYPE,
-    "id": CATALOG_ID,
-    "name": CATALOG_NAME
-}
+ADDON_CATALOG = {"type": CATALOG_TYPE, "id": CATALOG_ID, "name": CATALOG_NAME}

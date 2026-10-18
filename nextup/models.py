@@ -1,10 +1,13 @@
-from pydantic import BaseModel
 from typing import List
+
+from pydantic import BaseModel
+
 
 class CatalogEntry(BaseModel):
     type: str
     id: str
     name: str
+
 
 class Manifest(BaseModel):
     id: str
@@ -15,12 +18,14 @@ class Manifest(BaseModel):
     types: List[str]
     catalogs: List[CatalogEntry]
 
+
 class MetaPreview(BaseModel):
-    id: str                      
-    type: str                 
-    name: str                   
-    poster: str                
-    posterShape: str | None = None 
+    id: str
+    type: str
+    name: str
+    poster: str
+    posterShape: str | None = None
+
 
 class CatalogResponse(BaseModel):
     metas: List[MetaPreview] | None

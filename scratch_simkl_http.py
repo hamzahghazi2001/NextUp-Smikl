@@ -1,5 +1,6 @@
-import os
 import hashlib
+import os
+
 import requests
 from dotenv import load_dotenv
 
@@ -17,9 +18,7 @@ if not access_token:
 
 
 # Safe fingerprint so we can tell which token is actually being loaded
-token_fingerprint = hashlib.sha256(
-    access_token.encode()
-).hexdigest()[:12]
+token_fingerprint = hashlib.sha256(access_token.encode()).hexdigest()[:12]
 
 print("client_id length:", len(client_id))
 print("access token length:", len(access_token))

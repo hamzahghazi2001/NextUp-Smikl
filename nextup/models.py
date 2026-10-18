@@ -16,11 +16,11 @@ class Manifest(BaseModel):
     catalogs: List[CatalogEntry]
 
 class MetaPreview(BaseModel):
-    id: str
-    type: str
-    name: str
-    poster: str
-    posterShape: int | None = None
+    id: str                      
+    type: str                 
+    name: str                   
+    poster: str                
+    posterShape: str | None = None 
 
 class CatalogResponse(BaseModel):
     metas: List[MetaPreview] | None
